@@ -16,7 +16,14 @@ Only since Bitcoin has p2p and decentralization become synonymous with tokens. P
 In trustless environments this is needed to guarantee and incentivize performance of duties. In trusted environments this is not needed or desireable. For many applications and websites the access to their functionality is enough to incentivize the participation in the network and its maintenance. This can be seen in the bittorent network. It has been shown through the Folding@Home project that for altruistic purposes people are willing to donate their unsused computing resources to causes that benefit all of humanity. So it stands to reason that for mutual benefit of access alone people can compute the functionality of and store the data of a p2p application cooperatively. Offstack is attempting to solve this problem, for every computing area that the this rationale and technology applies, in a manner that does not alienate the skillset of the average web developers and their best practices.
 
 ## Key Architecture Points
-Offstack is designed to encourage human particpation by making it trivial to do so. The only incentive for participation is access to network resources. It then returns access to those resources back to the participants at no additional cost. With a model like this great emphasis has to be placed on privacy of the participants and respect for their resources. This is accomplished through ingenious architecture rather than brute force.
+Offstack is designed to encourage human contribution by making it trivial to do so. The only incentive for participation is access to network resources. It then returns access to those resources back to the participants at no additional cost. With a model like this great emphasis has to be placed on privacy of the participants and respect for their resources. This is accomplished through ingenious architecture rather than brute force restrictions. This section will detail how each layer accomplishes this.
+
+### The Off System
+This is the world's first brightnet, instead of anonymizing the network, the data blocks are anonymized and therefore, only meaningless garbage is ever exchanged and stored. This is made possible because of how files are represented in the off system. There is exists two numbers `a` and `b` mathematical relationship such that:
+```
+a ⊕ b = C 
+```
+This creates a third number `c` that has a parity relationship with `a` and `b`
 
 
 
