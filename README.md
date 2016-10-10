@@ -31,7 +31,18 @@ and
 ```
 b ⊕ c = a 
 ```
-meaning that a representation of each indvidual number can be created from any of the other two numbers. 
-
+meaning that a representation of each indvidual number can be created from any of the other two numbers. Computer data is just arbitrarily large numbers with the same properties as above. When storing to the Off System, a peer breaks down a file into chunks and creates a representation of it from random junk data contributed from other peers and theirself such that:
+```
+chunkOfFile ⊕ randomChunk = newRandomChunk
+```
+The OffSystem will never store the original data it will store the representation
+```
+randomChunk ⊕ newRandomChunk
+```
+but instead stores a tuple 
+```
+{randomChunk, newRandomChunk}
+```
+A file then can be thought of as a list of tuples of meaningless data. That same data can be considered a representation of an infinitecimal number of files. The meaning of that data is never stored but the representation is returned to the person who stored it in the form of a link that tells the system how to collect and process that random. This link holds the key to the original file and just like a real key grants access rights to the holder indefinitely. Unlike many p2p architectures that use heavy encryption to protect whole files from access the only think of value to protect is the link. 
 
 
