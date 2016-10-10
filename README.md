@@ -39,10 +39,10 @@ The OffSystem will never store the original data it will store the representatio
 ```
 randomChunk ⊕ newRandomChunk
 ```
-but instead stores a tuple 
+as a tuple 
 ```
 {randomChunk, newRandomChunk}
 ```
-A file then can be thought of as a list of tuples of meaningless data. That same data can be considered a representation of an infinitecimal number of files. The meaning of that data is never stored but the representation is returned to the person who stored it in the form of a link that tells the system how to collect and process that random. This link holds the key to the original file and just like a real key grants access rights to the holder indefinitely. Unlike many p2p architectures that use heavy encryption to protect whole files from access the only think of value to protect is the link. 
+A file then can be thought of as a list of tuples of meaningless data. That same data can be considered a representation of an infinitecimal number of files. The meaning of that data is never stored but the representation is returned to the person who stored it in the form of a link that tells the system how to collect and process that random. This link holds the key to the original file and just like a real key grants access rights to the holder indefinitely. Unlike many p2p architectures that use heavy encryption to protect whole files from access the only thing of value to protect is the link. This signifficantly limits the domain and amount of data over which security has to be considered. The method creates both privacy, replication, and anonymity for no additional overhead. In the case where a node is seized, lost, or hacked there is no data of value available and nothing incriminating can be recovered. 
 
 
