@@ -23,7 +23,15 @@ This is the world's first brightnet, instead of anonymizing the network, the dat
 ```
 a ⊕ b = C 
 ```
-This creates a third number `c` that has a parity relationship with `a` and `b`
+This creates a third number `c` that has a parity relationship with `a` and `b` such that
+```
+a ⊕ c = b 
+```
+and 
+```
+b ⊕ c = a 
+```
+meaning that a representation of each indvidual number can be created from any of the other two numbers. 
 
 
 
