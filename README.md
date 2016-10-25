@@ -18,7 +18,7 @@ In trustless environments this is needed to guarantee and incentivize performanc
 ## Key Architecture Points
 Offstack is designed to encourage human contribution by making it trivial to do so. The only incentive for participation is access to network resources. It then returns access to those resources back to the participants at no additional cost. With a model like this great emphasis has to be placed on privacy of the participants and respect for their resources. This is accomplished through ingenious architecture rather than brute force restrictions. This section will detail how each layer accomplishes this.
 
-### The Off System
+### The Off System (https://github.com/vijayee/js-offs)
 The Owner Free File System is the world's first brightnet, instead of anonymizing the network, the data blocks are anonymized and therefore, only meaningless garbage is ever exchanged and stored. This is made possible because of how files are represented in the off system. There is exists two numbers `a` and `b` mathematical relationship such that:
 ```
 a ⊕ b = C 
